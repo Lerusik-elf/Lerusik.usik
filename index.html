@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="logo.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <title>Ремонт Бытовой Техники Новосибирск</title>
+  <link rel="stylesheet" href="css/index.css">
+
+</head>
+
+<body>
+
+  <div class="wrapper">
+
+    <div class="modal-req" id="modal-req">
+      <div class="modal-req__box">
+        <div class="modal-req__block open">
+          <h2 class='modal-req__title'>Заказать обратный звонок</h2>
+          <p class='modal-req__text'>
+            Оставьте заявку на сайте и администратор свяжется с Вами в ближайшее время.
+          </p>
+          <form class='modal-req-form' id="modal-req-form">
+            <input id="modal-req-name" name='name' type="text" class='modal-req-form__input' placeholder='ФИО' />
+            <input id="modal-req-number" name='number' type="text" class='modal-req-form__input'
+              placeholder='Номер телефона' />
+            <button type='submit' class='modal-req-form__btn'>Оставить заявку</button>
+          </form>
+
+        </div>
+        <button class="modal-req__close" id="modal-req-close">
+          <svg width="24px" height="24px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+            stroke="#000000" stroke-width="0.00024000000000000003">
+            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC"
+              stroke-width="0.096"></g>
+            <g id="SVGRepo_iconCarrier">
+              <path
+                d="M20.7457 3.32851C20.3552 2.93798 19.722 2.93798 19.3315 3.32851L12.0371 10.6229L4.74275 3.32851C4.35223 2.93798 3.71906 2.93798 3.32854 3.32851C2.93801 3.71903 2.93801 4.3522 3.32854 4.74272L10.6229 12.0371L3.32856 19.3314C2.93803 19.722 2.93803 20.3551 3.32856 20.7457C3.71908 21.1362 4.35225 21.1362 4.74277 20.7457L12.0371 13.4513L19.3315 20.7457C19.722 21.1362 20.3552 21.1362 20.7457 20.7457C21.1362 20.3551 21.1362 19.722 20.7457 19.3315L13.4513 12.0371L20.7457 4.74272C21.1362 4.3522 21.1362 3.71903 20.7457 3.32851Z"
+                fill="#333"></path>
+            </g>
+          </svg>
+        </button>
+        <div class="modal-req__block">
+          <h2 class='modal-req__title modal-req__thank-title' style="margin-bottom: 30px; text-align: center;">
+            Благодарим за заявку!</h2>
+          <p class='modal-req__text modal-req__thank-text'>
+          </p>
+        </div>
+      </div>
+    </div>
+    <main class="main">
+
+      <header class="header">
+        <div class="container">
+          <div class="header__inner">
+            <img class="header__logo" src="img/logo.png" alt="logo icon" />
+            <div class="header__links">
+              <a href="#base" class="header__link">О базе</a>
+              <a href="#fun" class="header__link">Экскурсии</a>
+              <a href="#activ" class="header__link">Услуги</a>
+              <a href="#loc" class="header__link">Контакты</a>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <section class="hero">
+        <div class="hero__wrap">
+          <div class="hero__overlay"></div>
+          <div class="container">
+            <div class="hero__inner">
+              <div class="hero__title">
+                Отдохните наедине с природой <br>
+                в 220 км. от города
+              </div>
+              <div class="hero__subtitle">
+                Различные варианты проживания в тихом, экологически чистом месте.
+              </div>
+              <button class='hero__btn' id='problem-req-1'>
+                Получить консультацию
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="desc" id="base">
+        <div class="container">
+          <div class="desc__inner">
+            <div class="desc__wrap">
+              <img class="desc__img" src="img/desc.jpg">
+            </div>
+            <div class="desc__wrap">
+              <div class="desc__title">
+                Гостевой дом<br> на берегу реки<br> Белый Июс
+              </div>
+              <div class="desc__text">
+                Гостевой дом «Белый Июс», находится на возвышенности, всего в 15-20 метрах от реки. <br><br>
+                Здание расположено
+                на выезде из деревни на участке площадью 50 соток, который окружен металлическим забором с распашными
+                железными воротами.<br><br> Вся территория перед гостевым домом представляет забетонированную парковку
+                на 20
+                машин.
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="advs">
+        <div class="container">
+          <div class="advs__list">
+            <div class="advs__item">
+              <img class="advs__icon" src="img/adv1.png">
+              <div class="advs__title">
+                Экологически
+                чистое место
+              </div>
+            </div>
+            <div class="advs__item">
+              <img class="advs__icon" src="img/adv2.png">
+              <div class="advs__title">
+                Удобное
+                расположение
+              </div>
+            </div>
+            <div class="advs__item">
+              <img class="advs__icon" src="img/adv3.png">
+              <div class="advs__title">
+                Номера со всеми
+                удобствами
+              </div>
+            </div>
+            <div class="advs__item">
+              <img class="advs__icon" src="img/adv4.png">
+              <div class="advs__title">
+                Русская
+                баня
+              </div>
+            </div>
+            <div class="advs__item">
+              <img class="advs__icon" src="img/adv5.png">
+              <div class="advs__title">
+                Оборудованные зоны
+                для шашлыка
+              </div>
+            </div>
+            <div class="advs__item">
+              <img class="advs__icon" src="img/adv6.png">
+              <div class="advs__title">
+                Работаем
+                круглый год
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <section class="fun" id="fun">
+        <div class="container">
+          <div class="fun__title">
+            Организация экскурсий
+          </div>
+          <div class="fun__raw">
+            <div class="fun__wrap">
+              <img class="fun__img" src="img/lake.jpg">
+            </div>
+            <div class="fun__wrap">
+              
+              <div class="fun__text">
+                - Тропа Предков<br> - Горная гряда Сундуки<br>
+                - Саяношушенская ГЭС<br> - Туимский Провал<br>
+                - Масловский Провал<br> - Ергаки<br>
+                - Солёные озёра<br> - Белё<br> - Тус<br>
+                - Озеро Шира<br> - Ивановские озёра<br>
+              </div>
+            </div>
+          </div>
+          
+          
+        </div>
+      </section>
+
+      <section class="activ" id="activ">
+        <div class="container">
+          <div class="activ__title">
+            Услуги
+          </div>
+          <div class="activ__list">
+            <div class="activ__item">
+              <img class="activ__img" src="img/activ1.jpg" alt="avatar">
+              <div class="activ__name">Мангальные зоны</div>
+              <div class="activ__price">Бесплатно</div>
+              <div class="activ__price">Дрова 100₽</div>
+            </div>
+            <div class="activ__item">
+              <img class="activ__img" src="img/activ2.jpg" alt="avatar">
+              <div class="activ__name">Баня</div>
+              <div class="activ__price">1000₽/час (от 2х часов)</div>
+              <div class="activ__price">Веник 200₽/шт</div>
+            </div>
+            <div class="activ__item">
+              <img class="activ__img" src="img/activ3.jpg" alt="avatar">
+              <div class="activ__name">Бильярд</div>
+              <div class="activ__price">400₽/час</div>
+            </div>
+            <div class="activ__item">
+              <img class="activ__img" src="img/activ4.jpg" alt="avatar">
+              <div class="activ__name">Кухня</div>
+              <div class="activ__price">Трёхразовое питание.</div>
+            </div>
+
+          </div>
+          <div class="activ__text">
+            На территории есть баня, в которую могут поместиться от 1 до 8 человек. Веники и простыни
+            предоставляются посетителями. <br>
+            Также на территории есть мангал со шампурами и решетками, два уличных
+            туалета, три беседки для отдыха, до реки всего 50 метров.<br>
+            Летом есть возможность купаться и ловить рыбу
+            (в определенных местах) и организовывать сплавы на катамаранах.<br>
+            Вечерние посиделки у костра.Настольный теннис.
+            Возможность отдыхать в палатке, на территории Базы.
+            <br>
+            Для детей организован бассейн.
+            Души с горячей водой,
+            комфортабельные туалеты на первом этаже.
+            
+          </div>
+        </div>
+      </section>
+
+      <section class="prices">
+        <div class="container">
+          <div class="prices__title">
+            Варианты проживания
+          </div>
+          <div class="prices__list">
+            <div class="prices__item">
+              <img class="prices__img" src="img/room1.jpg" alt="avatar">
+              <div class="prices__name">Двухместный номер <br>на втором этаже</div>
+              <div class="prices__price">от 1 600 ₽ / сутки</div>
+              <button class="prices__btn">Забронировать</button>
+            </div>
+            <div class="prices__item">
+              <img class="prices__img" src="img/room2.jpg" alt="avatar">
+              <div class="prices__name">Люкс</div>
+              <div class="prices__price">от 2 400 ₽ / сутки</div>
+              <button class="prices__btn">Забронировать</button>
+            </div>
+            <div class="prices__item">
+              <img class="prices__img" src="img/room3.jpg" alt="avatar">
+              <div class="prices__name">Пятиместный номер</div>
+              <div class="prices__price">от 4 000 ₽ / сутки</div>
+              <button class="prices__btn">Забронировать</button>
+            </div>
+            <div class="prices__item">
+              <img class="prices__img" src="img/room4.jpg" alt="avatar">
+              <div class="prices__name">Двухместный номер<br> в мансарде</div>
+              <div class="prices__price">от 1 200 ₽ / сутки</div>
+              <button class="prices__btn">Забронировать</button>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+      <section class="gallery">
+        <div class="container">
+          <div class="gallery__title">
+            Галерея
+          </div>
+          <div class="swiper">
+            <div class="gallery__list swiper-wrapper">
+              <div class="gallery__item swiper-slide">
+                <img class="gallery__img" src="img/slide2.jpg">
+              </div>
+              <div class="gallery__item swiper-slide">
+                <img class="gallery__img" src="img/slide3.jpg">
+              </div>
+              <div class="gallery__item swiper-slide">
+                <img class="gallery__img" src="img/slide4.jpg">
+              </div>
+              <div class="gallery__item swiper-slide">
+                <img class="gallery__img" src="img/slide5.jpg">
+              </div>
+              <div class="gallery__item swiper-slide">
+                <img class="gallery__img" src="img/slide6.jpg">
+              </div>
+              <div class="gallery__item swiper-slide">
+                <img class="gallery__img" src="img/slide7.jpg">
+              </div>
+              <div class="gallery__item swiper-slide">
+                <img class="gallery__img" src="img/slide8.jpg">
+              </div>
+
+            </div>
+            <div class="gallery__left">
+              <svg role="presentation" focusable="false" style="display: block" viewBox="0 0 9.3 17"
+                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <polyline fill="none" stroke="#ffffff" stroke-linejoin="butt" stroke-linecap="butt" stroke-width="2"
+                  points="0.5,0.5 8.5,8.5 0.5,16.5"></polyline>
+              </svg>
+            </div>
+            <div class="gallery__right">
+              <svg role="presentation" focusable="false" style="display: block" viewBox="0 0 9.3 17"
+                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <polyline fill="none" stroke="#ffffff" stroke-linejoin="butt" stroke-linecap="butt" stroke-width="2"
+                  points="0.5,0.5 8.5,8.5 0.5,16.5"></polyline>
+              </svg>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <section class="revs">
+        <div class="container">
+          <div class="revs__title">Отзывы</div>
+          <div class="revs__list">
+            <div class="revs__item review">
+              <div class="review__box">
+                <div class="review__name">Сергей С.</div>
+                <div class="review__text">
+                  Очень добротный дом, немного нуждается в ремонте, но хозяева работают над этим. Туалет и душевая
+                  кабина внутри здания, первый этаж шикарен, столовая. Есть кухонная зона, бильярд. Жаркая отличная баня
+                  с ледяным бассейном. В общем когда закончат косметический ремонт, явные 5 баллов. Соотношение цены и
+                  качества сейчас соответствует настоящему.
+                </div>
+              </div>
+            </div>
+            <div class="revs__item review">
+              <div class="review__box">
+                <div class="review__name">Анна В.</div>
+                <div class="review__text">
+                  Тихое, уютное место. Расположено в глухой деревни. До ближайшего магазина около 15 км. Есть номера
+                  разной категории, бильярд, душ, возможна организация питания
+                </div>
+              </div>
+            </div>
+            <div class="revs__item review">
+              <div class="review__box">
+                <div class="review__name">Денис Г.</div>
+                <div class="review__text">
+                  Все советую побывать в этом чудесном месте! Природа, люди, пещеры, тропа предков, отдыхали четыре дня
+                  и это было очень мало, в плане проживания, кому как... условия немного спартанские но уют и тепло дают
+                  возможность поставить этому месту 5 балов пусть и не большим авансом!
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <section class="location" id="loc">
+        <div class="container">
+          <div class="location__title">
+            Как добраться
+          </div>
+          <div class="location__address">
+            655211 Хакасия, Шириский район, поселок Малая Сыя, Советская 30<br>
+            Координаты 54.4051, 89.4389
+          </div>
+          <div class="location__subtitle">
+            Телефон администратора:
+          </div>
+          <a href="tel:+79532586743" class="location__number">
+            +7 (953) 258-6743
+          </a>
+          <br>
+          <a href="tel:+79061907310" class="location__number">
+            +7 (906) 190-7310
+          </a>
+          <span>(WhatsApp, Viber)</span>
+        </div>
+      </section>
+
+      <section class="map">
+        <div class="container">
+          <iframe
+            src="https://yandex.ru/map-widget/v1/?um=constructor%3Aa73c335145379cdc486b09fe1b49cef932a56a6612bf65217cc7686a5af16de7&amp;source=constructor"
+            width="100%" height="659" frameborder="0"></iframe>
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <img class="footer__logo" src="img/logo-big.jpg" alt="avatar">
+
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+  </div>
+</body>
+
+</html>
