@@ -1,0 +1,337 @@
+@import 'reset';
+@import 'header';
+@import 'hero';
+@import 'desc';
+@import 'advs';
+@import 'prices';
+@import 'activ';
+@import 'fun';
+@import 'location';
+@import 'revs';
+@import 'gallery';
+@import 'footer';
+
+
+body {
+    font-family: "Mulish", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+.main {
+    flex: 1 0 auto;
+}
+
+
+.footer {
+    flex: 0 0 auto;
+}
+
+.swiper{
+    max-width: 1000px;
+}
+
+.map{
+    margin: 50px 0;
+}
+
+//modal-policy
+.modal-policy.open {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-policy {
+    display: none;
+    background: #21252982;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+
+    &__box {
+        background: #e5eeff;
+        border: 1px solid #0000;
+        border-radius: 30px;
+        color: #333;
+        margin: auto;
+        max-width: 1000px;
+        outline: none;
+        overflow: auto;
+        padding: 60px 30px;
+        position: relative;
+        transition: all .5s ease;
+        width: 80%;
+    }
+
+    &__title {
+        font-size: 40px;
+        text-align: center;
+        font-weight: 600;
+        margin-bottom: 20px;
+    }
+
+    &__text {
+        font-size: 20px;
+        margin: 0 auto 10px;
+
+        strong {
+            font-weight: 700;
+        }
+    }
+
+    &__close {
+        position: absolute;
+        border: 1px solid transparent;
+        background: transparent;
+        top: 10px;
+        right: 13px;
+        cursor: pointer;
+
+        & svg {
+            width: 38px;
+            height: 38px;
+        }
+    }
+
+}
+
+@media(max-width:440px) {
+
+    .modal-policy__close {
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        border: 1px solid transparent;
+        background: transparent;
+        top: 3px;
+        right: 8px;
+
+        & svg {
+            width: 24px;
+            height: 24px;
+        }
+    }
+}
+
+// modal-req
+.modal-req.open {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-req__block.open {
+    display: block;
+}
+
+.modal-req {
+    display: none;
+    background: #21252982;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+
+    &__box {
+        background: #fff;
+        border: 1px solid #0000;
+        border-radius: 30px;
+        color: #333;
+        font-size: 1rem;
+        margin: auto;
+        max-width: 1000px;
+        outline: none;
+        overflow: auto;
+        padding: 60px 30px;
+        position: relative;
+        transition: all .5s ease;
+        width: 80%;
+    }
+
+    &__block {
+        display: none;
+    }
+
+    &__title {
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 100%;
+        margin-bottom: 10px;
+    }
+
+    &__text {
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 120%;
+        margin-bottom: 20px;
+        max-width: 900px;
+        width: 100%;
+    }
+
+    &-form {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        justify-content: space-between;
+
+        &__input {
+            background: #fff;
+            border: 1px solid #000;
+            border-radius: 10px;
+            color: #999;
+            line-height: 120%;
+            max-width: 600px;
+            padding: 15px 15px 15px 20px;
+            width: 100%;
+        }
+
+        &__input+&__input {
+            margin-top: 10px;
+        }
+
+        &__btn {
+            background: #874b9f;
+            border-radius: 12px;
+            color: #fff;
+            cursor: pointer;
+            line-height: normal;
+            margin-top: 30px;
+            padding: 15px 40px;
+            &:hover{
+            background: #552668;
+
+            }
+        }
+
+        &__input,
+        &__btn {
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 400;
+        }
+    }
+
+    &__item {
+        display: none;
+    }
+
+    &__close {
+        background: #0000;
+        border: 1px solid #0000;
+        cursor: pointer;
+        position: absolute;
+        right: 13px;
+        top: 10px;
+        cursor: pointer;
+
+        & svg {
+            width: 38px;
+            height: 38px;
+        }
+    }
+
+}
+
+@media (max-width: 600px) {
+    .modal-req__box {
+        border-radius: 15px;
+        margin: 0 10px;
+        max-width: 450px;
+        padding: 30px 15px;
+        width: 100%;
+    }
+
+    .modal-req__title {
+        font-size: 26px;
+    }
+
+    .modal-req__text {
+        font-size: 18px;
+    }
+
+    .modal-req-form__input {
+        font-size: 18px;
+    }
+
+    .modal-req-form__btn {
+        font-size: 20px;
+        margin: 15px auto 0;
+        width: 100%;
+    }
+}
+
+@media (max-width: 440px) {
+    .modal-req__box {
+        padding: 15px 5px;
+    }
+
+    .modal-req__title {
+        font-size: 16px;
+        margin-bottom: 5px;
+        text-align: center;
+    }
+
+    .modal-req__text {
+        font-size: 10px;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    .modal-req-form__input {
+        max-width: 260px;
+        padding: 10px;
+        font-size: 10px;
+        width: 100%;
+    }
+
+    .modal-req-form__btn {
+        margin-top: 10px;
+        padding: 8px 0;
+        font-size: 10px;
+        max-width: 300px;
+        text-align: center;
+        width: 100%;
+    }
+
+    .modal-req-form {
+        align-items: center;
+    }
+
+    .modal-req__close {
+        background: #0000;
+        border: 1px solid #0000;
+        height: 30px;
+        position: absolute;
+        right: 8px;
+        top: 3px;
+        width: 30px;
+
+        svg {
+            width: 24px;
+            height: 24px;
+        }
+    }
+}
+
+.error {
+    border-color: red;
+}
